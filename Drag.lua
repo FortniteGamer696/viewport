@@ -2,7 +2,7 @@
 local InputS = game:GetService("UserInputService")
 local RunS = game:GetService("RunService")
 
-local DragToRotateViewportFrame = {}
+
 local MAX_ANGLE_STEP = math.rad(10)
 
 --------------------------------------------------------------------------------
@@ -137,7 +137,7 @@ local DragToRotateViewportFrameMT = {
 	__index = DragToRotateViewportFrame
 }
 
-function DragToRotateViewportFrame.New(...)
+function DragToRotateViewportFrame:New(...)
 	local self = setmetatable({}, DragToRotateViewportFrameMT)
 	self:Initialize(...)
 	return self
