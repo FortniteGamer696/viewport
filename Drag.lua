@@ -2,7 +2,7 @@
 local InputS = game:GetService("UserInputService")
 local RunS = game:GetService("RunService")
 
-local CLASS_NAME = "DragToRotateViewportFrame"
+local DragToRotateViewportFrame = {}
 local MAX_ANGLE_STEP = math.rad(10)
 
 --------------------------------------------------------------------------------
